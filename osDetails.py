@@ -12,7 +12,7 @@ for k in keys:
         if k.startswith('py'):
             pythondata.update({k : str(eval('platform.' + k + '()'))})
         else:
-            print(k + ' :=>> ' + str(eval('platform.' + k + '()')))
+            print(k + ' :=>>-- ' + str(eval('platform.' + k + '()')))
 
     except Exception as e:
         err.append(f'{k}:{e}')
